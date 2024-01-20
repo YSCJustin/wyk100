@@ -1,3 +1,16 @@
 document.addEventListener('DOMContentLoaded', async function() {
-    console.log("Hello World!")
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        })
+    })
+    const hidden = document.querySelectorAll('.hidden');
+    hidden.forEach((item) => {
+        observer.observe(item);
+    })
 })
+
