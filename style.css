@@ -5,7 +5,22 @@ body{
     background: linear-gradient(to bottom right,#083611, #142d9c, #4d9a5d);
     
 }
+.colored-margin {
+    background-color: rgb(196, 196, 196); 
+    margin: 30px; 
+}
+.button{
+    color: rgb(27, 76, 27); background-color: rgba(240, 248, 255, 0.5); padding: 15px;border-radius: 10px;
+}
+.button:hover{
+    background-color: rgba(240, 248, 255, 0.9);
+    color: #3eb353;
+    transition: all 0.5s;
+    border-radius: 20px;
+    transition: all 0.5s;
+    
 
+}
 section {
     color: rgb(193, 216, 212);
     display:grid;
@@ -26,29 +41,31 @@ h1{
     font-size: 50px;
 }
 
-/* .hidden_left {
-    opacity: 0;
-    filter: blur(10px);
-    transform: translateX(-50%);
-    transition: all 1.5s ;
-} */
+
 .hidden {
     opacity: 0;
     filter: blur(10px);
     transform: translateX(-30%);
-    transition: all 2.1s ;
+    transition: all 1.3s ;
+}
+.hidden_long{
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-25%);
+    transition: all 2s ;
 }
 .right {
     opacity: 0;
     filter: blur(10px);
     /* transform: translateX(25%); */
-    transition: all 2.1s ;
+    transition: all 1.3s ;
 }
 
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+    transition: all 1.3;
 }
 @media(prefers-reduce-motion){
     .hidden {
