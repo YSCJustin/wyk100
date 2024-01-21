@@ -15,6 +15,12 @@ section {
     align-content: center;
     
 }
+.align-right {
+    justify-self: end;
+}
+.align-left {
+    justify-self: start;
+}
 h1{
     font-size: 50px;
 }
@@ -28,14 +34,14 @@ h1{
 .hidden {
     opacity: 0;
     filter: blur(10px);
-    transform: translateX(-100%);
-    transition: all 2s ;
+    transform: translateX(-30%);
+    transition: all 2.1s ;
 }
 .right {
     opacity: 0;
     filter: blur(10px);
     /* transform: translateX(25%); */
-    transition: all 2s ;
+    transition: all 2.1s ;
 }
 
 .show {
