@@ -5,21 +5,19 @@ body{
     background: linear-gradient(to bottom right,#083611, #142d9c, #4d9a5d);
     
 }
-.colored-margin {
-    background-color: rgb(196, 196, 196); 
-    margin: 30px; 
-}
-.button{
-    color: rgb(27, 76, 27); background-color: rgba(240, 248, 255, 0.5); padding: 15px;border-radius: 10px;
-}
-.button:hover{
-    background-color: rgba(240, 248, 255, 0.9);
-    color: #3eb353;
-    transition: all 0.5s;
-    border-radius: 20px;
-    transition: all 0.5s;
-    
 
+.button{
+    color: rgb(27, 76, 27); background-color: rgba(240, 248, 255, 0.5); padding: 20px;border-radius: 10px;
+}
+@media (min-width: 768px) {
+    .button:hover{
+        background-color: rgba(240, 248, 255, 0.9);
+        color: #3eb353;
+        transition: all 0.5s;
+        border-radius: 25px;
+        
+
+    }
 }
 section {
     color: rgb(193, 216, 212);
