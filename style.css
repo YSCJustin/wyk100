@@ -18,6 +18,9 @@ body{
         
 
     }
+    .fixed{
+        background-attachment: fixed;
+    }
 }
 section {
     color: rgb(193, 216, 212);
