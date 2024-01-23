@@ -8,9 +8,27 @@ body{
     background-color: #0c393f;
     
 }
+div {
+    position: fixed;
+    width: 100vw
+}
+a {
+    text-decoration: none;
+}
 
 .button{
     color: rgb(27, 76, 27); background-color: rgba(240, 248, 255, 0.5); padding: 20px;border-radius: 10px;
+}
+.title{
+    color:#3eb353;
+}
+@supports(-webkit-background-clip: text){
+    .title {
+        background: linear-gradient(to right, rgb(50, 253, 240), rgb(58, 58, 239));
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+          background-clip: text;
+    }
 }
 @media (min-width: 768px) {
     .button:hover{
