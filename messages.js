@@ -64,6 +64,10 @@ let messages = [
      message: "omg positive contribution"},
      {person: "Mok Tsz Lung",
      message: "i fail to kau the girls"},
+     {person: "Mok Tsz Lung",
+     message: "(random singing)"},
+        {person: "Mok Tsz Lung",
+        message: "i am emo"},
 
 
 
