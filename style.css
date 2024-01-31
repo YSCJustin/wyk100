@@ -8,7 +8,7 @@ body{
     background-color: #0c393f;
     
 }
-div {
+#navbar {
     position: fixed;
     width: 100vw
 }
@@ -44,6 +44,31 @@ a {
         background-attachment: fixed;
     }
 }
+#messages {
+    width: 70vw;
+    height: 120vh;
+    overflow: hidden;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: transform 1s ease-in-out;
+}
+
+
+.message {
+    animation: slideIn 1.5s ease-in forwards;
+    transition:   opacity 1s ease-out; 
+    overflow-wrap: break-word;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 0;
+    overflow: hidden;
+}
+@keyframes slideIn {
+    0% { transform: translateX(-10%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; max-height: 800px; }
+}
+
 section {
     color: rgb(193, 216, 212);
     display:grid;
