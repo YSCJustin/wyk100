@@ -70,6 +70,8 @@ let unsentMessages = [...messages];
 
 document.addEventListener('DOMContentLoaded', async function() {
     let speed = 2000;
+    let curspeed = document.getElementById('curspeed');
+    curspeed.textContent = speed + 'ms';
     let speedInput = document.getElementById('speed');
     interval = setInterval(function() {
         if (unsentMessages.length === 0) {
@@ -102,6 +104,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         let speedValue = speedInput.value;
     
         speed = speedValue;
+        curspeed.textContent = speed+ 'ms';
         clearInterval(interval);
         interval = setInterval(function() {
             if (unsentMessages.length === 0) {
