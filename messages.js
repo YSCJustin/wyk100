@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
         let randomIndex = Math.floor(Math.random() * unsentMessages.length);
         let messageContent = unsentMessages[randomIndex].message;
+        let person = unsentMessages[randomIndex].person
 
         unsentMessages.splice(randomIndex, 1);
         let message = document.createElement('div');
@@ -86,7 +87,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         let author = document.createElement('p');
         content.style.fontWeight='bolder'
         content.textContent = messageContent;
-        author.textContent = unsentMessages[randomIndex].person;
+        author.textContent = person;
         message.appendChild(content);
         message.appendChild(author);
 
