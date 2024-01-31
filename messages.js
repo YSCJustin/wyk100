@@ -62,6 +62,8 @@ let messages = [
      message: "lets go anime girl"},
      {person: "Mok Tsz Lung",
      message: "omg positive contribution"},
+     {person: "Mok Tsz Lung",
+     message: "i fail to kau the girls"},
 
 
 
